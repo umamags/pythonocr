@@ -7,7 +7,8 @@ import xlrd
 import os
 
 def main(argv):
-    basedir = "C:/workspace/python/pythonocr"
+    # basedir = "C:/workspace/python/pythonocr"
+    basedir = os.getcwd()
     excel_mapping_file = basedir + "/mappings/image_mappings.xlsx"
      
     df = pd.read_excel(excel_mapping_file, sheet_name="Main")
